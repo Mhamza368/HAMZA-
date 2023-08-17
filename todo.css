@@ -1,6 +1,16 @@
-h1{
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
     text-align: center;
 }
-h2{
-    text-align: center;
+
+.add-button {
+    background-color: rgb(255, 0, 0);
+}
+
+.add-button:hover {
+    background-color: aqua;
 }

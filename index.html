@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="todo.css">
+
 <head>
     <title>My To-Do List</title>
     <style>
-        .completed {
-            text-decoration: line-through;
+        body {
+            font-family: Arial, sans-serif;
+            font-style: oblique;
+            background-color: #802626;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
@@ -17,5 +22,10 @@
         </i>
     </h1>
     <h2>
-        <input type="text" id="input" placeholder="Title...">
+        <div>
+            <i class="todo-item">
+            <input type="text" class="todo-text-input" placeholder="Add a new task">
+            <i class="todo-buttons">
+            <button class="add-button">Add</button>
+        </div>
     </h2>
