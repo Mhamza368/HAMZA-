@@ -23,11 +23,11 @@
         <u> To-Do List </u>
     </h1>
     <h2>
-        <div>
-            <i class="todo-item">
-                <i class="todo-buttons">
-                    <input type="text" id="input-box" placeholder="Add a new task">
-                    <button onclick="addTask()"> Add </button>
+        <div class="todo-item">
+            <div class="todo-buttons">
+                <input type="text" id="input-box" placeholder="Add a new task">
+                <button onclick="AddTask()"> Add </button>
+            </div>
         </div>
     </h2>
     <div>
@@ -39,7 +39,7 @@
 
 <script>
     var inputBox = document.getElementById("input-box");
-    var listcontainer = document.getElementById("list-container")
+    var listContainer = document.getElementById("list-container");
 
     function AddTask() {
         if (inputBox.value === '') {
@@ -49,7 +49,6 @@
             let li = document.createElement("li");
             li.innerHTML = inputBox.value;
             listContainer.appendChild(li);
-            
         }
         inputBox.value = ""
     }

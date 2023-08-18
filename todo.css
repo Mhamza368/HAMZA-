@@ -12,11 +12,11 @@ h2 {
     text-align: center;
 }
 
-.add-button {
+.todo-text-input {
     background-color: rgb(255, 0, 0);
 }
 
-.add-button:hover {
+.add-button :hover {
     background-color: rgb(0, 255, 21);
 }
 
