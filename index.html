@@ -8,8 +8,8 @@
         body {
             font-family: Arial, sans-serif;
             font-style: oblique;
-            background-color: #ffffff;
             width: 400px;
+            background-color: whitesmoke;
             margin: 50px auto;
             padding: 20px;
             border-radius: 10px;
@@ -20,14 +20,49 @@
 
 <body>
     <h1>
-       <u> To-Do List </u>
+        <u> To-Do List </u>
     </h1>
     <h2>
         <div>
             <i class="todo-item">
-                <input type="text" class="todo-text-input" placeholder="Add a new task">
                 <i class="todo-buttons">
-                    <button class="add-button">Add</button>
+                    <input type="text" id="input-box" placeholder="Add a new task">
+                    <button onclick="addTask()"> Add </button>
         </div>
     </h2>
+    <div>
+        <ul id="list-container">
+
+        </ul>
+    </div>
 </body>
+
+<script>
+    var inputBox = document.getElementById("input-box");
+    var listcontainer = document.getElementById("list-container")
+
+    function AddTask() {
+        if (inputBox.value === '') {
+            alert("You must enter something!");
+        }
+        else {
+            let li = document.createElement("li");
+            li.innerHTML = inputBox.value;
+            listContainer.appendChild(li);
+            
+        }
+        inputBox.value = ""
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
