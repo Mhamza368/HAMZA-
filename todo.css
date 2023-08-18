@@ -1,6 +1,11 @@
 h1 {
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+h1:hover {
+ text-transform: uppercase;
+ text-shadow: #000000;   
 }
 
 h2 {
@@ -12,5 +17,12 @@ h2 {
 }
 
 .add-button:hover {
-    background-color: aqua;
+    background-color: rgb(0, 255, 21);
 }
+.todo-text-input {
+    width: 30%;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
